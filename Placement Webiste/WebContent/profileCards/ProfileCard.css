@@ -1,0 +1,37 @@
+
+            #ProfileCard{
+                height: auto; margin: 20px; box-shadow: 3px 3px 10px 0px #948b8b; 
+                transition: transform .5s; 
+            }
+            #ProfileCard:hover{
+                color:#000033;
+                transform: scale(1.05);
+            }
+            #upperSectionOfCard{
+                background-image: url('image/backgroundProfile.jpg');
+                background-size: cover;
+                
+            }
+            
+            #ProfileCardName{
+                font:400 24px oxygen;
+            }
+            
+            #ProfileCardPreviousQualification{
+                font:400 12px roboto;
+            }
+            
+            #ProfileCardSkills{
+                font:400 14px roboto;
+            }
+            #ProfileCardButton{
+                margin: 10px
+            }
+            
+            #footerProfileCard{
+                    padding: 20px;
+                    color: white;
+                    background-color: #353535;
+                    font:300 14px roboto;
+            }
+

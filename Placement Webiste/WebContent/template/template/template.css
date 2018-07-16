@@ -1,0 +1,152 @@
+body
+     {
+      background:url("background.jpg");  
+     }
+
+/*-----------------------------------------------desktop view ---------------------------------------- */ 
+ @media screen and (min-width: 480px) {
+                                   /* , navbar style and edited bootstrap of navbar      */ 
+     .navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 5px 27px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ccc;         
+     }
+.navbar-default {
+    background-color: #2e3a45;
+    border-color: #e7e7e7; 
+     }
+ .navbar-default .navbar-brand {
+    color: #ccc;
+}        
+ .navbar-default .navbar-nav>li>a {
+    color: #ccc;
+         }
+.navbar-default .navbar-nav>li>a:hover {
+    color: beige;
+         }     
+.navbar-default .navbar-nav>li>a:active {
+    color: beige;
+         }    
+#nav1
+        {
+            padding:5px 50px 5px 50px !important;
+        }       
+#tabs
+    {
+     float:right;
+     }
+ 
+/*---------------------------middle section for design other page edit this section--------------------*/ 
+        
+        
+.middle
+     {
+         background-color: ;
+         color:black;
+         width:100%;
+         height:800px;
+     }   
+
+/* ------------------------- footer , i think it's perfect ------------------------------------ */ 
+.footer1
+     {
+         padding: 30px 70px 10px 70px;
+         background-color: #2e3a45;;
+         color:#ccc;
+         margin-top:10px;
+         font-family: "Times New Roman", Times, serif;
+     }
+     #coordinators
+     {
+        padding-left:120px !important;
+     }
+     #sendMessage
+     {
+         margin-top:10px;
+     }
+    #coordinator1
+        {
+            padding-top:15px;
+            padding-left: 30px;
+        }
+     
+     }
+
+
+
+
+
+
+/* , mobile and small device view -------------------------------------*/ 
+@media screen and (max-width: 480px) {
+   
+    
+/*--------------------------------------navbar style and edited bootstrap of navbar -------------- */ 
+    .navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 0px 28px 0px 67px;
+    font-size: 10px;
+    line-height: 15px;
+    margin-top: -54px;
+    color: #ccc;
+        }
+ .navbar-default {
+    background-color: #2e3a45;
+    border-color: #e7e7e7;
+      }  
+.navbar-default .navbar-brand {
+    color: #ccc;
+}        
+.navbar-default .navbar-nav>li>a {
+    color: #ccc;
+             }
+hover:.navbar-default .navbar-nav>li>a:hover {
+    color:beige;
+             }      
+hover:.navbar-default .navbar-nav>li>a:active {
+    color:beige;
+             }    
+ #nav1
+        {
+            padding:5px 0px 5px 10px !important;
+        }     
+#tabs
+     {
+         float:left;
+     }
+    
+                                             
+/* -------------------------------------middle section for design other page edit this section -----------------------*/ 
+
+.middle
+     {
+         background-color:;
+         color:black;
+         width:100%;
+         height:800px;
+     }
+
+    
+/*----------------------------------footer , i think it's perfect----------------------------------------------------*/ 
+   .footer1
+     {
+         padding: 30px 30px 30px 30px;
+         background-color:#2e3a45;
+         color:#ccc;
+         margin-top:10px;
+         font-family: "Times New Roman", Times, serif;
+     }
+     #coordinators
+     {
+        padding-left:30px;
+     }
+     #sendMessage
+     {
+         margin-top:10px;
+     }
+
+     }

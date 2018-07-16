@@ -1,0 +1,45 @@
+
+
+        #ProfileCard{
+            height: auto; margin: 20px; box-shadow: 3px 3px 10px 0px #948b8b; 
+            transition: transform .5s; 
+        }
+        #ProfileCard:hover{
+            color:#000033;
+            transform: scale(1.08);
+        }
+        #upperSectionOfCard{
+            background-image: url('image/profileImage.jpg');
+            background-size: cover;
+            
+        }
+        
+        #ProfileCardName{
+            margin-top: 200px;
+            font:500 24px roboto;
+            font-design:underline;
+        }
+        #ProfileCardDesignation{
+            font:400 16px roboto;
+        }
+        #ProfileCardExperience{
+            font:400 14px roboto;
+        }
+        
+        #ProfileCardAchivements{
+            margin-top: 10px;
+            font-weight: 600;
+        }
+        #ProfileCardCount{
+            font-weight: 400;
+        }
+        
+        #ProfileCardSpecialization{
+            margin-top: 20px;
+            font:600 17px roboto;
+        }
+        
+        #ProfileCardTopics{
+            font:400 15px roboto;
+            margin:auto 15px 20px 15px;
+        }
