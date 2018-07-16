@@ -4,6 +4,7 @@
 <%@ page import = "javax.servlet.http.*,javax.servlet.*" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix = "c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix = "sql"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,16 +53,9 @@
 </head>
  
 <body>
-<% String name=request.getParameter("name");%>
 
- <sql:setDataSource var = "snapshot" driver = "com.mysql.jdbc.Driver"
-         url = "jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12246881"
-         user = "sql12246881"  password = "dYNptIAmes"/>
-          <sql:query dataSource = "${snapshot}" var = "result">
-         SELECT * from placement where name='<%=name%>';
-      </sql:query>
  <!-- navbar   --> 
-<section id="header" class="appear"></section>
+
   
   
   <div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" data-300="line-height:60px; height:60px; background-color:rgba(5, 42, 62, 1);">
@@ -104,18 +98,52 @@
     </div>
   </div>
 
+     <br> 
+    <br> 
     
      
  <!-- navbar   --> 
-    
+    <% String name=request.getParameter("name");%>
+
+ <sql:setDataSource var = "snapshot" driver = "com.mysql.jdbc.Driver"
+         url = "jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12246881"
+         user = "sql12246881"  password = "dYNptIAmes"/>
+          <sql:query dataSource = "${snapshot}" var = "result">
+         SELECT * from placement where name='<%=name%>';
+      </sql:query>
  
     
+    
 <!-- middle section   -->     
-<div class="container">       
+<div class="container">   
+ 
   <div class="middle">
-         
+
 <!------------ profile------------->    
     <div class="row"> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br>  <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br>  <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    
      <div class="col-lg-4" id="profilepart1">
       <c:forEach var = "row" items = "${result.rows}">
        <img src="<c:out value = "${row.image}"/>" alt="map" width="240" height="250" id="profilepic">    
@@ -144,6 +172,8 @@
         </div>     
     <div class="col-lg-8" id="profilepart2">
           <div class="row">
+            <br> 
+   
            <c:forEach var = "row" items = "${result.rows}">
               <h1> <span><c:out value = "${row.name}"/></span></h1><span><i style="color:blue;"><c:out value = "${row.CurrentLocation}"/></i></span><br> 
               <span style="font-size:18px;"><b>Graduation</b></span> <span style="padding-left:5px;"><c:out value = "${row.Graduation}"/></span><br>
@@ -183,7 +213,8 @@
                <h4 id=""><b>Hobbies:</b></h4>   
                <p id="detailheadings"><c:out value = "${row.Hobbies}"/> </p>
        </c:forEach>
-        </div>      
+        </div>
+              
     </div>  
       </div> 
 </div>    
