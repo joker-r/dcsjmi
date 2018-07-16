@@ -150,22 +150,22 @@
          </c:forEach>
          <div class="personaleDetail" style="padding-top:40px;">
         
-             <small>Personal Detail ------------------------</small><br>
+             Personal Detail ------------------------<br>
               <c:forEach var = "row" items = "${result.rows}">
-             <span><b>Birthday</b></span>  <span>:<small><c:out value = "${row.DateOfBirth}"/></small></span><br>
-             <span><b>Gender</b></span>  <span>:<small><c:out value = "${row.gender}"/></small></span><br>
-             <span><b>Current location</b></span>:<span><small><c:out value = "${row.CurrentLocation}"/></small></span><br>
-             <span><b>Marital Status</b></span>  <span>:<small>Single</small></span><br>
+             <span><b>Birthday</b></span>  <span>:<c:out value = "${row.DateOfBirth}"/></span><br>
+             <span><b>Gender</b></span>  <span>:<c:out value = "${row.gender}"/></span><br>
+             <span><b>Current location</b></span>:<span><c:out value = "${row.CurrentLocation}"/></span><br>
+             <span><b>Marital Status</b></span>  <span>:Single</span><br>
            </c:forEach>
          </div> 
          
          
          <div class="personaleDetail" style="" id="contactheading">
-              <small >Contact Detail -------------------------</small><br>
+              Contact Detail -------------------------<br>
                <c:forEach var = "row" items = "${result.rows}">
               <img src="icons/smartphone.png" alt="smartphonelogo1" name="logo1" id="logo1"><span><c:out value = "${row.Mobile}"/></span><br>
               &nbsp;<img src="icons/linkdein1.png" alt="linkedinlogo" name="logo1" id="logo2"><a href="<c:out value = "${row.LinkedinProfileLink}"/>"><span><c:out value = "${row.LinkedinProfileLink}"/></span></a><br> 
-              <img src="icons/sms3.png" alt="smslogo" name="logo1" id="logo3"><span>styamgupta@gmail.com</span><br> 
+              
         </c:forEach>
          </div>  
            
@@ -182,7 +182,7 @@
             </div>
         
         <div class="row" style="padding-top:30px;"> 
-            <small>Acadmics--------------------------------------</small> 
+           Acadmics-------------------------------------- 
             <h4><b>Educational Detail</b></h4>
             <c:forEach var = "row" items = "${result.rows}">
             <p style="" id="detailheadings" >1.<c:out value = "${row.Graduation}"/> </p>
@@ -202,7 +202,7 @@
             </c:forEach>
             </div>
            <div class="row" style="padding-top:20px;"> 
-            <small>other--------------------------------------</small> 
+            Other--------------------------------------
               <c:forEach var = "row" items = "${result.rows}">
                <h4 id=""><b>Achievments</b></h4>
         
